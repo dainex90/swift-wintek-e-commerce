@@ -1,0 +1,242 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz One">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<!--NOTE. I need to put SOME of the style code here because of how Shopify CSS has limit on the number of characters with custom CSS.
+The same goes for the other files.
+-->
+<style>
+#free-ship-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem 0rem 4rem 0rem;
+}
+#jag-ar-trott {
+  display:flex;
+  align-items: left;
+flex-direction: column;
+    }
+#thumb-up-ico {
+     font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 24;
+}
+#main-container {
+  font-family: "M PLUS 1", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 38px 0px 20px 0px;
+}
+.li-cont > span{
+   margin-left: .4em;
+}
+.li-cont {
+display: flex;
+align-items: center;
+}
+
+#discount-policy {
+ font-size: x-small; 
+ font-weight: bold;
+ color: blue;
+ margin-left: .75em;
+}
+#main-container span a:visited {
+ color: blue;
+}
+#main-container span a:active {
+ color: blue;
+}
+#refund-policy-link {
+ position: relative;
+ font-size: x-small; 
+ font-weight: bold;
+ top: -3em;
+}
+#combine-terms-details-cont {
+display: flex;
+   margin-top: -1.25em;
+margin-bottom: 2.25em;
+}
+#withdrawal-policys-container {
+color: rgb(81, 86, 90); 
+list-style-type: square; 
+display: flex; 
+align-items: top; 
+justify-content: start;
+}
+#turn-left-icon {
+ position: relative;
+ top: .1em;
+ padding-left: .25em;
+ 
+}
+.blue-focus-txt {
+color: #0073ff;
+}
+#return-terms-list {
+  margin-left: 3.5em;
+}
+@media only screen and (max-width: 900px) {
+
+#free-ship-container {
+  flex-direction: column;
+}
+
+#turn-left-icon {
+ padding-left: .5em;
+ 
+}
+#jag-ar-trott {
+    display: flex; 
+    flex-direction: column; 
+    align-items: start; 
+    margin-bottom: -1em;
+}
+#main-container {
+padding-bottom: 36px;
+padding-top:10px;
+}
+.li-cont{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  padding-bottom: 8px;
+  padding-top: 0px;
+  border-top: 4px solid rgb(81, 86, 90);
+  background-color: #00b6f5;
+  font-weight: 600;
+  margin: 4px;
+  box-shadow: 0px 5px 8px rgb(81, 86, 90);
+border-bottom-right-radius: 2px;
+border-bottom-left-radius: 2px;
+}
+.li-cont:last-child {
+    box-shadow: 1px 5px 8px rgb(81, 86, 90);
+}
+.li-cont > span{
+   margin-left: 0em;
+}
+#combine-terms-details-cont {
+  justify-content: center;
+}
+#combine-disc-txt {
+   text-align: center;
+  }
+#return-terms-list {
+display: flex; 
+margin-left: -2em;
+margin-right: .68em;
+text-align: center;
+align-items: center;
+}
+
+#withdrawal-policys-container {
+flex-direction: column; 
+text-align: start;
+align-items: center;
+list-style-type: none;
+}
+#right-of-withdrawal {
+ color: rgb(81, 86, 90);
+}
+}
+</style>
+</head>
+
+<body>
+    <div id="main-container">
+
+        <a class="header-txt" href="https://shopify.com/79548547410/auth/lookup?destination_uuid=178afe10-305f-4a28-a726-df1f525e2cbe&redirect_uri=https%3A%2F%2Fshopify.com%2F79548547410%2Faccount%2Fcallback&rid=eb99af4e-990f-4b5d-ae12-be20a80c7ed1&ui_locales=en" 
+        rel="Sign up page" title="Sign up now"> Join Today!
+        </a>
+        <span class="material-symbols-outlined md-48 notranslate" style="color: rgb(81, 86, 90); margin-top: .25em;">
+            how_to_reg
+        </span>
+        
+        <div>
+            <p id="combine-disc-txt" class="content-text" style="font-size: large;">Combine your discounts and get a total of <span style="font-family: Fugaz One; color: #00b6f5;"> 30% Off </span> your first order.
+            </p>
+
+            <div id="combine-terms-details-cont">
+                <span style="font-size: x-small; font-weight: bold;">(See code below).</span>
+            
+                <span id="discount-policy">  <a href="https://swiftwintekstore.com/pages/discounts" rel="Page describing all discount policys" 
+                    title="discount policy">discount policy</a> </span>
+                
+            </div>
+
+        </div>
+
+        <div id="base-flex">
+            <div id="free-ship-container">
+                <div style="display: flex; align-items: center;">
+                    <img class="ship-return-imgs" src="../static/imgs/free-shipping-red-and-grey-truck-transparent-bg.png" alt="Fast Shipping truck" width="300px"/> 
+                    <label for="" class="header-txt" style="color: rgb(81, 86, 90);"> EU + UK </label>
+                </div>
+                <div style="display: flex; align-items: center; margin-left: 2rem;">
+                    <img class="ship-return-imgs" src="../static/imgs/free-returns-grey-box.png" alt="Free Return Box" width="175px">
+                    <label for="" class="header-txt blue-focus-txt"> 
+                        Free<span style="color: rgb(81, 86, 90);"> Returns</span>
+                    </label>
+                </div>
+            </div>   
+
+            <ul id="withdrawal-policys-container">
+                <div id="withdrawal-inner-content">
+                    <div id="jag-ar-trott">
+                        <div>
+                            <label for="" id="return-policy-header" class="header-txt"> <span style="color: #0073ff;"> 30 days </span> <span id="right-of-withdrawal">right of withdrawal </p>
+                            </label> 
+                            <span id="turn-left-icon" class="material-symbols-outlined md-48 notranslate">
+                                u_turn_left
+                            </span>
+                        </div>                   
+                        <p>
+                            <span id="refund-policy-link"><a  href="https://swiftwintekstore.com/policies/refund-policy" rel="Page describing all refund policys" title="refund policy">Refund policy</a> </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="return-terms-list">
+
+                    <div class="li-cont">
+                    <li class="li-items" id="top-li">
+                                    <p class="content-text">Found another product? Make a swap for free, no hassle.</p>
+                                </li>
+                    <span class="material-symbols-outlined md-30 notranslate" id="thumb-up-ico">
+                    recommend
+                    </span>
+                    </div>
+                                
+                    <div class="li-cont">
+                    <li class="li-items">
+                                <p class="content-text">Secured Shopping with SSL Certificate</p> 
+                                </li>
+                    <span class="material-symbols-outlined md-30 notranslate">
+                    encrypted
+                    </span>
+                    </div>
+
+                    <div id="last-li-cont" class="li-cont">
+                                <li class="li-items">
+                                <p class="content-text">Customer service open weekdays <br>from 11:00 to 20:00 (GMT+01:00)</p> 
+                                </li>
+                    <span class="material-symbols-outlined md-30 notranslate">
+                    contact_support
+                    </span>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

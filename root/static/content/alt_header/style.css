@@ -1,0 +1,19 @@
+#main-flex-container {
+    background-color: whitesmoke;
+    padding: 0px;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar li a {
+    color: black;
+}
+#navbar a::visited {
+    color: black;
+}
+#navbar a::after {
+    color: black;
+}

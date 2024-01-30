@@ -1,0 +1,26 @@
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Salsa', cursive;
+}
+
+#title {
+    color: red;
+}
+
+#content {
+    font-weight: lighter;
+    padding-bottom: 35px;
+}
+
+button {
+    border: 0px;
+    background-color: rgb(42, 47, 55);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+   
+}

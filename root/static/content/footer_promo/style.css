@@ -1,0 +1,35 @@
+
+#free-ship-cont {
+border: 2px solid red;
+}
+#flex-container {
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+color: whitesmoke;
+font-weight: bold;
+}
+#list-container {
+display: flex;
+justify-content: center;
+}
+#list-container ul {
+list-style: square;
+}
+.top-li {
+margin-top: 12px;
+}
+@media (max-width: 950px) {
+#webwiki-badge {
+    display: none;
+}
+}
+#shipping-code {
+font-weight: normal;
+}
+#shipping-terms {
+color: whitesmoke;
+font-weight: normal;
+font-size: small;
+}
