@@ -2,47 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+    </script>
 <style>
 #navbar {
   height: 1.75em;
   display: flex;
   width: 100%;
-  z-index: 100;
+  padding: 2rem 0rem 2rem 0rem;
   background: white;
   align-items: center;
-justify-content: center;
+  justify-content: center;
   border-bottom: 1.5px solid #d0d8d9;
 }
 </style>
 </head>
 <body>
-    <div id="main-flex-container">
+    <header id="main-flex-container">
         <nav id="navbar">
             <ul>
-                <li> 
-                    <a href="https://swiftwintekstore.com/pages/under-dev" rel="Our Top Picks" title="Top Picks"> 
-                        Top Picks
-                        <span style="color: blue; font-size: x-small; font-weight: bold; margin-left: .275em;"> 
-                        (New)
-                        </span>
-                    </a>
-                </li>
-                <li> 
-                    <a href="" rel="Search for the best Memory or SSD drive for your needs" title="Micron Memory Selector"> 
-                        Memory & SSD Selector
-                        <span style="color: blue; font-size: x-small; font-weight: bold; margin-left: .275em;"> 
-                        (Upcoming)
-                        </span>
-                    </a>
-                </li>
-                <li> 
-                    <a href="https://swiftwintekstore.com/blogs/news" rel="News about our products and technology" title="News Feed"> 
-                        News
-                    </a>
-                </li>
+                <div class="alt-header-options">
+                    <li> 
+                        <a href="https://swiftwintekstore.com/pages/under-dev" rel="Our Top Picks" title="Top Picks"> 
+                            Top Picks
+                            <span style="color: blue; font-size: x-small; font-weight: bold; margin-left: .275em;"> 
+                            (New)
+                            </span>
+                        </a>
+                    </li>
+                    <div class="bottom-border-orange"></div>
+                </div>
+                <div class="alt-header-options">
+                    <li> 
+                        <a href="https://swiftwintekstore.com/pages/memory-ssd-selector" rel="Find the best Memory or SSD drive for your needs" title="Micron Memory Selector"> 
+                            Find your Memory
+                            <span style="color: blue; font-size: x-small; font-weight: bold; margin-left: .275em;"> 
+                            (Upcoming)
+                            </span>
+                        </a>
+                    </li>
+                    <div class="bottom-border-orange"></div>
+                </div>
+                <div class="alt-header-options">
+                    <li> 
+                        <a href="https://swiftwintekstore.com/blogs/news" rel="News about our products and technology" title="News Feed"> 
+                            News
+                        </a>
+                    </li>
+                    <div class="bottom-border-orange"></div>
+                </div>
+                
             </ul>
         </nav>
-    </div>
+    </header>
 </body>
 </html>

@@ -27,11 +27,14 @@ a:hover {
   border-bottom: 2px solid rgb(255, 70, 14);
 }
 
-#HeaderMenu-products-find-your-memory, #HeaderDrawer-products-find-your-memory {
-  font-family: "Contrail One";
-  padding-right: 2.5rem;
-  text-decoration: none;
+/* SCROLL UP STICKY FUNCTIONALITY */
+header {
+  height: 40px;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
 }
-#HeaderMenu-products-find-your-memory, #HeaderDrawer-products-find-your-memory:hover {
-  border-right: 3px solid rgb(255, 70, 14);
+.nav-up {
+  top: -40px;
 }
