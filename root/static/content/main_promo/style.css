@@ -1,5 +1,5 @@
 .content-text {
-    color: rgb(81, 86, 90);
+  color: rgb(81, 86, 90);
 }
 .header-txt {
   font-family: "Fugaz One";
@@ -19,7 +19,12 @@
 .material-symbols-outlined.md-30 {
   font-size: 28px;
 }
-#return-policy-header {
-  color: #00b6f5;
+.return-and-withdrawal-labels {
+  color: #0073ff;
   font-size: xx-large;
+}
+.header-wrapper {
+  position: relative;
+  box-shadow: 0px 2px 8px #20282e;
+  margin-bottom: 1rem;
 }

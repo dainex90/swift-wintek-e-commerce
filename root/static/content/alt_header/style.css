@@ -1,19 +1,37 @@
 #main-flex-container {
-    background-color: whitesmoke;
-    padding: 0px;
+  background-color: whitesmoke;
+  padding-bottom: 1rem;
 }
-
 #navbar ul {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
+}
+#navbar a {
+  color: black;
+  display: flex;
+  font-size: small;
+  margin-right: 0.7rem;
+  align-items: center;
+  padding-bottom: 0.15rem;
+}
+a {
+  text-decoration: 0px;
+}
+a:hover {
+  border-bottom: 2px solid rgb(255, 70, 14);
+}
+#navbar a:visited {
+  border-bottom: 2px solid rgb(255, 70, 14);
+}
+#navbar a:after {
+  border-bottom: 2px solid rgb(255, 70, 14);
 }
 
-#navbar li a {
-    color: black;
+#HeaderMenu-products-find-your-memory, #HeaderDrawer-products-find-your-memory {
+  font-family: "Contrail One";
+  padding-right: 2.5rem;
+  text-decoration: none;
 }
-#navbar a::visited {
-    color: black;
-}
-#navbar a::after {
-    color: black;
+#HeaderMenu-products-find-your-memory, #HeaderDrawer-products-find-your-memory:hover {
+  border-right: 3px solid rgb(255, 70, 14);
 }
