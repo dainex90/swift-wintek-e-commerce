@@ -88,8 +88,10 @@ display: flex;
 align-items: center;
 }
 .policy-links:active {
+.policy-links:active {
  color: blue;
 }
+.policy-links:visited {
 .policy-links:visited {
  color: blue;
 }
@@ -104,12 +106,31 @@ list-style-type: square;
 display: flex; 
 align-items: start;
 margin-top: 2.5rem;
+align-items: start;
+margin-top: 2.5rem;
 }
 .blue-focus-txt {
 color: #0073ff;
 }
 #return-terms-list {
   margin-left: 3.5em;
+}
+#shipping-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+}
+#shipping-container > div {
+    display: inherit;
+    align-items: center;
+}
+#shipping-policy-link {
+    margin-left: 2.5rem;
+}
+#return-container {
+   display: flex;
+   align-items: center;
+    margin-left: 5rem;
 }
 #shipping-container {
     display: flex; 
@@ -146,6 +167,9 @@ flex-direction: column;
 }
 #free-ship-container {
   flex-direction: column;
+}
+#jag-ar-trott > div{
+    flex-direction: column;
 }
 #jag-ar-trott > div{
     flex-direction: column;
@@ -195,6 +219,9 @@ list-style-type: none;
 #withdrawal-inner-content {
     margin-bottom: 2.75rem;
 }
+#withdrawal-inner-content {
+    margin-bottom: 2.75rem;
+}
 }
 </style>
 </head>
@@ -216,6 +243,8 @@ list-style-type: none;
                 <span style="font-size: x-small; font-weight: bold;">(See code below).</span>
                 <a href="https://swiftwintekstore.com/pages/discounts" class="policy-links" id="discount-policy-link" rel="Page describing all discount policys" 
                 title="discount policy">discount policy</a>
+                <a href="https://swiftwintekstore.com/pages/discounts" class="policy-links" id="discount-policy-link" rel="Page describing all discount policys" 
+                title="discount policy">discount policy</a>
             </div>
 
         </div>
@@ -229,6 +258,11 @@ list-style-type: none;
                     </div>
                     <a href="https://swiftwintekstore.com/policies/shipping-policy" id="shipping-policy-link" class="policy-links" rel="Page describing the shipping policy" title="shipping policy">Shipping policy</a>
                 </div>
+                
+                <div id="return-container">
+                    <img class="ship-return-imgs" src="../../imgs/free-return-grey-box.png" alt="Free Return Box" width="175px">
+                    <label for="" class="header-txt return-and-withdrawal-labels blue-focus-txt"> 
+                        Free<span style="color: rgb(81, 86, 90);"> returns</span>
                 
                 <div id="return-container">
                     <img class="ship-return-imgs" src="../../imgs/free-return-grey-box.png" alt="Free Return Box" width="175px">
@@ -248,6 +282,8 @@ list-style-type: none;
                             <span id="turn-left-icon" class="material-symbols-outlined md-48 fade-in-image notranslate">
                                 u_turn_left
                             </span>
+                        </div>                       
+                        <a href="https://swiftwintekstore.com/policies/refund-policy" class="policy-links" rel="Page describing all refund policys" title="refund policy">Refund policy</a>
                         </div>                       
                         <a href="https://swiftwintekstore.com/policies/refund-policy" class="policy-links" rel="Page describing all refund policys" title="refund policy">Refund policy</a>
                     </div>
