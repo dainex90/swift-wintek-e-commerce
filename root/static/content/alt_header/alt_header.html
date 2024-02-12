@@ -1,18 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <link rel="stylesheet" href="stye.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="scroll_functionality.js">
+    </script>
+<style>
+#navbar {
+  height: 0em;
+  display: flex;
+  width: 100%;
+  padding: 1.75rem 0rem 1.75rem 0rem;
+  background: white;
+  align-items: center;
+
+  border-bottom: 1.5px solid #d0d8d9;
+}
+#find-your-memory {
+font-family: "Contrail One";
+}
+</style>
 </head>
 <body>
-    <div id="main-flex-container">
+    <header id="main-flex-container" class="nav-down">
         <nav id="navbar">
-            <ul>
-                <a href="https://swiftwintekstore.com/pages/under-dev" rel="This page is under development" title="under development">
-                    <li> New Picks </li>
-                </a>
+            <ul>    
+                    <li> 
+                        <a href="https://swiftwintekstore.com/pages/under-dev" rel="Our Top Picks" title="Top Picks"> 
+                            Top Picks
+                            <span style="color: blue; font-size: x-small; font-weight: bold; margin-left: .275em;"> 
+                            (New)
+                            </span>
+                        </a>
+                    </li>     
+                    <li id="find-your-memory"> 
+                        <a href="https://swiftwintekstore.com/pages/memory-ssd-selector" rel="Find the best Memory or SSD drive for your needs" title="Micron Memory Selector"> 
+                            Find your Memory
+                            <span style="color: blue; font-size: x-small; font-weight: bold; margin-left: .275em;"> 
+                            (Upcoming)
+                            </span>
+                        </a>
+                    </li>             
+                    <li> 
+                        <a href="https://swiftwintekstore.com/blogs/news" rel="News about our products and technology" title="News Feed"> 
+                            News
+                        </a>
+                    </li>      
             </ul>
         </nav>
-    </div>
+    </header>
+    <main>
+        This is your body.
+    </main>
+    <footer>
+        This is your footer.
+    </footer>
 </body>
 </html>
