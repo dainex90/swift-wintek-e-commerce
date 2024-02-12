@@ -7,16 +7,52 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz One">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+ <script>
+        var text = "30 days right of withdrawal _";
+        const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
 
+        const print_promo_text = async () => {
+            for (let index = 0; index < text.length; index++) {
+            const char = text[index];
+            document.getElementById("return-policy-header").innerHTML += `${char}`;
+            if (char == " ") {
+                await sleep(300);
+            }
+            else if (char == "_")
+            {
+                await sleep(700);
+            }
+            else {
+                await sleep(100)
+            }
+        }
+
+        document.getElementById("turn-left-icon").style.display = "inline";
+    }
+
+        const rand = () => {
+            alert("HELLO!");
+        }
+    </script>
 <!--NOTE. I need to put SOME of the style code here because of how Shopify CSS has limit on the number of characters with custom CSS.
 The same goes for the other files.
 -->
 
 <style>
+.fade-in-image { 
+  animation: fadeIn 1.0s;
+ }
+
+ @keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 #turn-left-icon {
+    display: none;
     position: relative;
     top: .1rem;
     left: .3rem;
+    color: rgb(81, 86, 90); ;
 }
 #discount-policy-link {
     margin-left: .4rem;
@@ -30,6 +66,9 @@ The same goes for the other files.
   display: flex;
   flex-direction: row;
   align-items: center;
+padding-bottom: 5rem;
+  border-bottom: 1.5px solid 
+  #e1e9f0;
 }
 #thumb-up-ico {
      font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 0, "opsz" 24;
@@ -40,7 +79,7 @@ The same goes for the other files.
   flex-direction: column;
   align-items: center;
   background-color: whitesmoke;
-  padding: 38px 0px 20px 0px;
+  padding: 38px 0px 28px 0px;
 }
 .li-cont > span{
    margin-left: .4em;
@@ -50,8 +89,10 @@ display: flex;
 align-items: center;
 }
 .policy-links:active {
+.policy-links:active {
  color: blue;
 }
+.policy-links:visited {
 .policy-links:visited {
  color: blue;
 }
@@ -64,6 +105,8 @@ margin-bottom: 2.25em;
 color: rgb(81, 86, 90); 
 list-style-type: square; 
 display: flex; 
+align-items: start;
+margin-top: 2.5rem;
 align-items: start;
 margin-top: 2.5rem;
 }
@@ -90,7 +133,27 @@ color: #0073ff;
    align-items: center;
     margin-left: 5rem;
 }
+#shipping-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+}
+#shipping-container > div {
+    display: inherit;
+    align-items: center;
+}
+#shipping-policy-link {
+    margin-left: 2.5rem;
+}
+#return-container {
+   display: flex;
+   align-items: center;
+    margin-left: 5rem;
+}
 @media only screen and (max-width: 900px) {
+#shipping-policy-link {
+    margin-left: 0rem;
+}
 #shipping-container {
     align-items: center;
     margin-bottom: 4.5rem;
@@ -106,10 +169,8 @@ flex-direction: column;
 #free-ship-container {
   flex-direction: column;
 }
-
-#main-container {
-padding-bottom: 36px;
-padding-top:10px;
+#jag-ar-trott > div{
+    flex-direction: column;
 }
 #jag-ar-trott > div{
     flex-direction: column;
@@ -126,8 +187,6 @@ padding-top:10px;
   font-weight: 600;
   margin: 4px;
   box-shadow: 0px 5px 8px rgb(81, 86, 90);
-border-bottom-right-radius: 2px;
-border-bottom-left-radius: 2px;
 }
 .li-cont:last-child {
     box-shadow: 1px 5px 8px rgb(81, 86, 90);
@@ -161,11 +220,14 @@ list-style-type: none;
 #withdrawal-inner-content {
     margin-bottom: 2.75rem;
 }
+#withdrawal-inner-content {
+    margin-bottom: 2.75rem;
+}
 }
 </style>
 </head>
 
-<body>
+<body onload="print_promo_text()">
     <div id="main-container">
         <a class="header-txt" href="https://shopify.com/79548547410/auth/lookup?destination_uuid=178afe10-305f-4a28-a726-df1f525e2cbe&redirect_uri=https%3A%2F%2Fshopify.com%2F79548547410%2Faccount%2Fcallback&rid=eb99af4e-990f-4b5d-ae12-be20a80c7ed1&ui_locales=en" 
         rel="Sign up page" title="Sign up now"> Join Today!
@@ -182,6 +244,8 @@ list-style-type: none;
                 <span style="font-size: x-small; font-weight: bold;">(See code below).</span>
                 <a href="https://swiftwintekstore.com/pages/discounts" class="policy-links" id="discount-policy-link" rel="Page describing all discount policys" 
                 title="discount policy">discount policy</a>
+                <a href="https://swiftwintekstore.com/pages/discounts" class="policy-links" id="discount-policy-link" rel="Page describing all discount policys" 
+                title="discount policy">discount policy</a>
             </div>
 
         </div>
@@ -190,11 +254,16 @@ list-style-type: none;
             <div id="free-ship-container">
                 <div id="shipping-container">
                     <div>
-                        <img class="ship-return-imgs" src="../../imgs/free-shipping-red-and-grey-truck.png" alt="Fast Shipping truck" width="300px"/> 
+                        <img class="ship-return-imgs" src="" alt="Fast free Shipping truck" width="300px"/> 
                         <label for="" class="header-txt" style="color: rgb(81, 86, 90);"> EU + UK </label>
                     </div>
                     <a href="https://swiftwintekstore.com/policies/shipping-policy" id="shipping-policy-link" class="policy-links" rel="Page describing the shipping policy" title="shipping policy">Shipping policy</a>
                 </div>
+                
+                <div id="return-container">
+                    <img class="ship-return-imgs" src="../../imgs/free-return-grey-box.png" alt="Free Return Box" width="175px">
+                    <label for="" class="header-txt return-and-withdrawal-labels blue-focus-txt"> 
+                        Free<span style="color: rgb(81, 86, 90);"> returns</span>
                 
                 <div id="return-container">
                     <img class="ship-return-imgs" src="../../imgs/free-return-grey-box.png" alt="Free Return Box" width="175px">
@@ -208,18 +277,14 @@ list-style-type: none;
                 <div id="withdrawal-inner-content">
                     <div id="jag-ar-trott">
                         <div>
-                            <label for="" class="header-txt return-and-withdrawal-labels"> 
-                                <span class="blue-focus-txt"> 
-                                    30 days 
-                                </span>
-                                <span style="color: rgb(81, 86, 90);">
-                                    right of withdrawal
-                                </span>
-                                
-                            </label> 
-                            <span id="turn-left-icon" class="material-symbols-outlined md-48 notranslate">
+                            <label for="" id="return-policy-header" class="header-txt return-and-withdrawal-labels"> 
+                              
+                                                                                                                                          </label> 
+                            <span id="turn-left-icon" class="material-symbols-outlined md-48 fade-in-image notranslate">
                                 u_turn_left
                             </span>
+                        </div>                       
+                        <a href="https://swiftwintekstore.com/policies/refund-policy" class="policy-links" rel="Page describing all refund policys" title="refund policy">Refund policy</a>
                         </div>                       
                         <a href="https://swiftwintekstore.com/policies/refund-policy" class="policy-links" rel="Page describing all refund policys" title="refund policy">Refund policy</a>
                     </div>
