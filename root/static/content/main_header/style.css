@@ -1,9 +1,43 @@
-#HeaderMenu-products-find-your-memory, #HeaderDrawer-products-find-your-memory {
-    font-family: "Contrail One";
-    padding-right: 2.5rem;
+
+#nav-experimental ul {
+    display: flex;
+    list-style-type: none;
+    padding: 1rem;
+    background: black;
+}
+
+#nav-experimental ul li a{
+    margin-right: 2.5rem;
     text-decoration: none;
+    color:aliceblue;
 }
-#HeaderMenu-products-find-your-memory, #HeaderDrawer-products-find-your-memory:hover {
-border-right: 3px solid rgb(255, 70, 14);
-}
+
+.main-header-link {
+    display: inline-block;
+    text-decoration: 0px;
+  }
+
+  .main-header-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    animation-name: example;
+    border-left: 0px solid red;
+    animation-duration: 4s;
+    background: rgb(255, 70, 14);
+    transition: width .050s ease-in;
+  }
   
+  .main-header-link:hover::after {
+    width: 100%;
+  }
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px; border-left: 0px;}
+    25%  {background-color:yellow; left:200px; top:0px; border-left: 25px;}
+    50%  {background-color:blue; left:200px; top:200px; border-left: 50px;}
+    75%  {background-color:green; left:0px; top:200px; border-left: 75px;}
+    100% {background-color:red; left:0px; top:0px; border-left: 100px;}
+
+  }

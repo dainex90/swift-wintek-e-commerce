@@ -5,8 +5,29 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Contrail One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fugaz One">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="module" src="featured_products.js"></script>
 <style>
+.chevron span{
+background: lightgrey;
+}
+#chevron-left {
+margin-left: 1rem;
+}
+#chevron-right {
+margin-right: 1rem;
+}
+.product-all {
+background: #f0f0f0;
+}
+.chevron .material-symbols-outlined:hover {
+  cursor: pointer; 
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 240
+}
 .now {
 color: blue;
 
@@ -15,8 +36,10 @@ color: blue;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 #featured-products-label {
+    margin-bottom: 1rem;
     font-size: x-large;
 }
 .in-stock-links {
@@ -33,67 +56,90 @@ color: blue;
 }
 #low-stock-attention {
     color: rgb(255, 70, 14);
-    font-family: "Fugaz One";
+    font-family: "Roboto", sans-serif;
+margin-top: -2.5rem;
+font-size: x-small;
 }
+
 </style>
 </head>
 
 <body>
     <div id="main-flex-container">
         <label for="" id="featured-products-label">Featured Products</label>
+        <ul id="featured-prod-container">
 
-        <div id="featured-prod-container">
-                
-            <div class="product-all">
-                <a class="in_stock_links" href="https://swiftwintekstore.com/products/mini-magnetic-power-bank-10000mah-external-battery" 
-                rel="Product-page-of-a-magnetic-power-bank" title="mini-magnetic-power-bank-10000mah-external-battery">
-                <p class="product-desc">
-                    New Power Banks in stock, 10000mAh 15WPD
-                </p>
+            <li style="display:flex; align-items: center;">
+                <div class="chevron" onclick="buttonPress()">
+                    <span id="chevron-left" class="material-symbols-outlined notranslate">
+                        chevron_left
+                    </span>
+                </div>
+                <div class="product-all" id="first-product">
+                    <a class="in_stock_links" href="https://swiftwintekstore.com/products/mini-magnetic-power-bank-10000mah-external-battery" 
+                        rel="Product-page-of-a-magnetic-power-bank" title="mini-magnetic-power-bank-10000mah-external-battery">
+                        <p class="product-desc">
+                            New Power Banks in stock, 10000mAh 15WPD
+                        </p>
+                        <p class="discount-amount">
+                            <span class="now">Now 7.13% Off </span>
+                        </p>
+                    </a>
+                </div>     
+            </li>
 
-                <p class="discount-amount">
-                    <span class="now">Now</span> 7.13% Off
-                </p>
-                </a>
-            </div>
-
-            <div class="product-all">
+            <li class="product-all">
                 <a class="in-stock-links" href="https://swiftwintekstore.com/products/electric-household-small-coffee-automatic-cream-stirrer"
-                rel="Product-page-of-an-automatic-coffee-cream-stirrer" title="coffee-automatic-cream-stirrer">
-                <p class="product-desc">
-                    Coffee drinker? Don't miss out on this product
-                </p>
-                <p class="discount-amount">
-                    <span class="now">Now</span> 11.7% Off
-                </p>
+                    rel="Product-page-of-an-automatic-coffee-cream-stirrer" title="coffee-automatic-cream-stirrer">
+                    <p class="product-desc">
+                        Coffee drinker? Don't miss out on this product
+                    </p>
+                    <p class="discount-amount">
+                        <span class="now">Now 11.7% Off </span>
+                    </p>
                 </a>
-            </div>
-            <div class="product-all">
+            </li>
+
+            <li class="product-all">
                 <a class="in-stock-links" href="https://swiftwintekstore.com/products/compact-bluetooth-photo-tag-sticker-thermal-printer-for-on-the-go-printing"
                     rel="Product page of a mobile bluetooth photo printer" title="compact bluetooth photo sticker printer">
-                <p class="product-desc">
-                    Compact Bluetooth Photo Tag Sticker Thermal Printer for On-the-Go Printing
-                </p>
-                <p class="discount-amount">
-                    Now 15% Off
-                </p>
-                <p id="low-stock-attention">low stock (< 10), order now!</p>
+                    <p class="product-desc">
+                        Compact Bluetooth Photo Tag Sticker Thermal Printer for On-the-Go Printing
+                    </p>
+                    <p class="discount-amount">
+                    <span class="now"> Now 15% Off </span>
+                    </p>
+                    <p id="low-stock-attention">Low stock (<strong><10</strong>), <strong>order now!</strong></p>
                 </a>
-            </div>
-            <div class="product-all">
-                <a class="in-stock-links" href="https://swiftwintekstore.com/products/2-5gbps-pci-e-network-card-stable-wired-connection-for-high-speed-performance-compatible-with-gigabit-ethernet-networks-ce-certified"
-                    rel="Product page of a 2.5Gbps PCI-E Network Card" title="2.5gbps PCIe network card - CE certified ">
-                <p class="product-desc">
-                    2.5Gbps PCI-E Network Card - Stable Wired Connection for High-Speed Performance - Compatible with Gigabit Ethernet Networks - CE Certified
-                </p>
-                <p class="discount-amount">
-                   <span class="now"> Now </span> 15% Off
-                </p>
-                <p id="low-stock-attention">low stock (< 10), order now!</p>
+            </li>
+            <li class="product-all">
+                <a class="in-stock-links" href="https://swiftwintekstore.com/products/zoerax-nvme-pro-adapter-pcie-4-0-ssd-to-desktop-pc-64gbps-m-2-nvme-ssd?variant=47704764809554"
+                    rel="Product page for the ZoeRax NVME Pro Adapter - PCIe 4.0 SSD to Desktop PC - 64Gbps - M.2 NVMe SSD" title="ZoeRax NVME Pro Adapter - PCIe 4.0 SSD to Desktop PC - 64Gbps - M.2 NVMe SSD">
+                    <p class="product-desc">
+                        ZoeRax NVME Pro Adapter - PCIe 4.0 SSD to Desktop PC - 64Gbps - M.2 NVMe SSD
+                    </p>
+                    <p class="discount-amount">
+                        <span class="now">Now 30% Off </span>
+                    </p>
                 </a>
-            </div>
-        </div>
+            </li>
+            <li style="display:flex; align-items: center;">
+                <div class="product-all" id="last-product">
+                    <a class="in-stock-links" href="https://swiftwintekstore.com/products/2-5gbps-pci-e-network-card-stable-wired-connection-for-high-speed-performance-compatible-with-gigabit-ethernet-networks-ce-certified"
+                        rel="Product page of a 2.5Gbps PCI-E Network Card" title="2.5gbps PCIe network card - CE certified ">
+                        <p class="product-desc">
+                            2.5Gbps PCI-E Network Card - Stable Wired Connection for High-Speed Performance - Compatible with Gigabit Ethernet Networks - CE Certified
+                        </p>
+                    </a>
+                </div>
+                <div class="chevron" onclick="buttonPress()">
+                    <span id="chevron-right" class="material-symbols-outlined notranslate">
+                        chevron_right
+                    </span>
+                </div>        
+            </li>
+           
+        </ul>
     </div>
-   
 </body>
 </html>

@@ -1,0 +1,12 @@
+{
+  "name": "featured_products",
+  "version": "1.0.0",
+  "description": "",
+  "main": "featured_products.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "daniel b",
+  "license": "ISC",
+  "type": "module"
+}

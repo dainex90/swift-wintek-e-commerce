@@ -1,28 +1,35 @@
-#main-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background: #1e2432;
-    font-family: "Roboto";
-    font-size: small;
-    padding-top: 0px;
-    margin-top: 3px;
+#featured-prod-container {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  padding-top: 0px;
+  align-items: center;
+}
+.product-all {
+  color: #24b7ed;
+  text-align: center;
+  margin-top: -10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.product-desc {
+  color: #007bff;
+}
+.discount-amount {
+  position: relative;
+  font-size: medium;
+  color: #00b6f5;
+  font-family: Contrail One;
+  top: -20px;
+  margin-bottom: -20px;
+}
+@media only screen and (max-width: 900px) {
+  #featured-prod-container {
+    flex-direction: column;
   }
-  .product-all {
-    color: #24b7ed;
-    text-align: center;
-    margin-top: -10px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .product-desc {
-    color: #007bff;
-  }
-  .discount-amount {
-    position: relative;
-    color: #00b6f5;
-    font-family: "Contrail One";
-    top: -20px;
-    margin-bottom: -20px;
-  }
+}
+#new-ul {
+  display:none;
+}

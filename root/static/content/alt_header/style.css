@@ -7,23 +7,28 @@
   }
   #navbar a {
     color: black;
-    display: flex;
     font-size: small;
     margin-right: 0.75rem;
     align-items: center;
     padding-bottom: 5px;
     padding-top: 5px;
   }
-  a {
+  .alt-nav-links {
+    display: inline-block;
     text-decoration: 0px;
   }
-  a:hover {
-    border-bottom: 2px solid rgb(255, 70, 14);
+
+  .alt-nav-links::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: rgb(255, 70, 14);
+    transition: width .050s ease-in;
   }
-  @media only screen and (max-width: 900px) {
-    #navbar a {
-      padding-bottom: 0.175rem;
-    }
+  
+  .alt-nav-links:hover::after {
+    width: 100%;
   }
   header {
     height: 38px;

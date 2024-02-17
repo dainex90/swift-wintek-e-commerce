@@ -1,0 +1,39 @@
+{
+    "products": [
+        {
+            "url": "https://swiftwintekstore.com/products/type-c-usb-3-2-gen2-pcie-card-hub-usb-3-0-pci-express-board-pci-e-pci-e-usb-3-adapter-multiplier-usb3-3-1-controller-riser-cards",
+            "rel": "Product page of a Type C USB 3.2 Gen2 PCIE Card Hub USB",
+            "title": "Type C USB 3.2 Gen2 PCIE Card Hub",
+            "desc": "Type C USB 3.2 Gen2 PCIE Card Hub USB 3.0 Adapter Multiplier USB3 3.1 Controller Riser Cards",
+            "discount_amt": 18.2
+        },
+        { 
+            "url": "https://swiftwintekstore.com/products/super-si-pro-silicon-fast-charger-mobile-phone-30w",
+            "rel": "Product page of a Super Si Pro Silicon Fast Charger Mobile Phone 30W",
+            "title": "Super Si Pro Silicon Fast Charger Mobile 30W",
+            "desc": "Super Si Pro Silicon Fast Charger Mobile Phone 30W",
+            "discount_amt": 7.14
+        },
+        { 
+            "url": "https://swiftwintekstore.com/products/zoerax-rj45-pass-through-crimper-for-cat6a-cat6-cat5-cat5e-ethernet-connector-all-in-one-crimp-tool",
+            "rel": "Product page of the ZoeRax RJ45 Pass Through Crimper for Cat6a Cat6 Cat5 Cat5e Ethernet Connector",
+            "title": "ZoeRax RJ45 Pass Through Crimper for Cat6a Cat6 Cat5 Cat5e Ethernet Connector",
+            "desc": "ZoeRax RJ45 Pass Through Crimper for Cat6a Cat6 Cat5 Cat5e Ethernet Connector",
+            "discount_amt": 25.0
+        },
+        { 
+            "url": "https://swiftwintekstore.com/products/zoerax-network-cable-tester-rj45-rj11-cat5-tool-test-ethernet-telephone-cables?variant=47704487297362",
+            "rel": "Product page of the ZoeRax Network Cable Tester RJ45 RJ11 CAT5 Tool",
+            "title": "ZoeRax Network Cable Tester RJ45 RJ11 CAT5 Tool",
+            "desc": "Ensure your CAT cables are working correctly. Get the ZoeRax Network Cable Tester RJ45 RJ11 CAT5 Tool with this <strong>Huge</strong> discount!",
+            "discount_amt": 41.6
+        },
+        {
+             "url": "https://swiftwintekstore.com/products/zoerax-all-in-one-pass-through-crimper-for-rj45-rj12-rj11-network-connectors-cat5-5e-6-6a-7?_pos=3&_sid=0cc4887e8&_ss=r",
+            "rel": "Product page of the ZoeRax All-in-One Pass Through Crimper for RJ45 RJ12 RJ11 Network Connectors - CAT5/5e/6/6a/7",
+            "title": "ZoeRax All-in-One Pass Through Crimper for RJ45 RJ12 RJ11 Network Connectors - CAT5/5e/6/6a/7",
+            "desc": "ZoeRax All-in-One Pass Through Crimper for RJ45 RJ12 RJ11 Network Connectors - CAT5/5e/6/6a/7",
+            "discount_amt": 19.3
+        }
+    ]   
+}
